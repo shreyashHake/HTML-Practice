@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form in HTML</title>
+</head>
+
+<body>
+    <div>
+        <h1>Addmission form</h1>
+        <form action="form.php">
+            <!--  'form.php' is the action to manages the backend of the cod... -->
+
+            <!--1. text input -->
+            <b>Enter your name : </b>
+            <input type="text" placeholder="eg: Anil" /><br />
+            <br />
+
+            <!--2. Radio button, they should have same 'name' rest different to operate perfectly..  -->
+            <b>Past qualification : </b><br />
+            <label for="qualificationida">
+                <input type="radio" value="qualification a" name="qualification" id="qualificationida" />
+                SSC </label><br />
+
+            <input type="radio" value="qualification b" name="qualification" id="qualificationidb" />
+            <label for="qualificationidb"> HSC </label>
+            <br />
+
+            <label for="qualificationidc">
+                <input type="radio" value="qualification c" name="qualification" id="qualificationidc" />
+                Graduate </label><br /><br />
+
+            <!-- <input type="radio" value="abc" name="toMaintainSameRaion" id="hasSameAsThatOfOneInLableInForSection"> -->
+
+            <b>Enter your last qualification grade : </b>
+            <input type="text" name="mark" id="mark" placeholder="percent out of 100" />
+            <br />
+            <br />
+
+            <!-- 3. Checkbox  -->
+            <b>Choose your required facilites : </b><br />
+            <div>
+                <input type="checkbox" value="mess" name="choice" id="choice1" />
+                <label for="choice1">Mess Card</label><br />
+
+                <input type="checkbox" value="gym" name="gym" id="choice2" />
+                <label for="choice2">Gym</label><br />
+
+                <input type="checkbox" value="library" name="library" id="choice3" />
+                <label for="choice3">Library</label><br>
+
+                <input type="checkbox" value="labCard" name="labCard" id="choice4" />
+                <label for="choice3">Computer and other lab card</label><br><br>
+            </div>
+
+            <!-- 4. Select among given option  -->
+            <b>Choose course you want to enroll : </b> <br>
+            <select name="course" id="courses">
+                <option value="Choose">Select here</option>
+                <option value="Choose">Petrochemical</option>
+                <option value="Choose">Managing Organizations</option>
+                <option value="Choose">Study of Metal</option>
+                <option value="Choose">Metullargy</option>
+            </select><br> <br>
+
+            <!-- 5. textholder  -->
+            <b>Kindly fill : </b><br>
+            <textarea name="describe" id="decriber" cols="30" rows="10"
+                placeholder="Why you want to join above course....." required></textarea>
+
+        </form>
+    </div>
+</body>
+
+</html>

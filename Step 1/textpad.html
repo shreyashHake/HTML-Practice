@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>New Tab</title>
+    <style>
+      body {
+        background: #13a833;
+        margin: 0;
+      }
+
+      #backgroundImage {
+        background: #ffffff;
+        border: 21;
+        height: 75%;
+        pointer-events: none;
+        position: fixed;
+        top: 10;
+        left: 10;
+        right: 10;
+        bottom: 10;
+        visibility: visible;
+        width: 75%;
+      }
+
+      [show-background-image] #backgroundImage {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <iframe id="backgroundImage" src=""></iframe> -->
+    <ntp-app></ntp-app>
+    <script type="module" src="new_tab_page.js"></script>
+    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
+    <link rel="stylesheet" href="shared_vars.css">
+  </body>
+</html>
